@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: DEMO
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+    database-platform: org.hibernate.dialect.MySQL57Dialect
+    generate-ddl: true
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/DEMODB?createDatabaseIfNotExist=true
+    username: root
+    password: 1234
+
+
+server:
+  port: 8090
